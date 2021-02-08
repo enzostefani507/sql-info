@@ -18,3 +18,12 @@ CREATE TABLE empleado(
     primary key(id_empleado),
     foreign key(id_dpto) references departamento(id_dpto)
 );
+
+describe empleado;
+
+alter table empleado add telefono int(10);
+alter table empleado rename fecha_nacimiento;
+alter table empleado modify apellido varchar(1);
+alter table empleado modify apellido varchar(20) default 'Misterio';
+
+
